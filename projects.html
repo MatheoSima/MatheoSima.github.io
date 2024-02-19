@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NBA Players</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>NBA Players Information</h1>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="players.html">Jugadores</a>
+        </nav>
+    </header>
+
+    <section id="search-section">
+        <h2>Buscar Jugadores</h2>
+        <form id="player-search-form">
+            <label for="player-search">Nombre del Jugador:</label>
+            <input type="text" id="player-search" placeholder="Buscar por nombre...">
+            <button type="submit">Buscar</button>
+        </form>
+    </section>
+
+    <section id="players-section">
+        <table>
+            <thead>
+                <tr>
+                    <th>Foto</th>
+                    <th>Jugador</th>
+                    <th>Puntos</th>
+                    <th>Rebotes</th>
+                    <th>Robos</th>
+                    <th>Tapones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Contenido de jugadores -->
+            </tbody>
+        </table>
+    </section>
+
+    <script src="search.js"></script>
+
+</body>
+</html>
