@@ -7,43 +7,39 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-    <header>
-        <h1>NBA Players Information</h1>
-        <nav>
-            <a href="index.html">Inicio</a>
-            <a href="players.html">Jugadores</a>
-        </nav>
-    </header>
-
-    <section id="search-section">
-        <h2>Buscar Jugadores</h2>
-        <form id="player-search-form">
-            <label for="player-search">Nombre del Jugador:</label>
-            <input type="text" id="player-search" placeholder="Buscar por nombre...">
-            <button type="submit">Buscar</button>
-        </form>
-    </section>
-
-    <section id="players-section">
-        <table>
-            <thead>
-                <tr>
-                    <th>Foto</th>
-                    <th>Jugador</th>
-                    <th>Puntos</th>
-                    <th>Rebotes</th>
-                    <th>Robos</th>
-                    <th>Tapones</th>
-                </tr>
-            </thead>
-            <tbody>
-                <!-- Contenido de jugadores -->
-            </tbody>
-        </table>
-    </section>
-
-    <script src="search.js"></script>
-
+    <div id="homepage">
+        <header>
+            <h1>NBA Players</h1>
+            <button onclick="showPlayers()">Ver Jugadores</button>
+        </header>
+        <section id="presentation">
+            <img src="presentation_image.jpg" alt="Presentación">
+            <p>Bienvenido a la página de jugadores de la NBA. Aquí podrás encontrar información sobre tus jugadores favoritos.</p>
+        </section>
+    </div>
+    <div id="playersPage" style="display: none;">
+        <header>
+            <h1>NBA Players</h1>
+            <input type="text" id="searchInput" placeholder="Buscar jugador..." onkeydown="searchOnEnter(event)">
+            <button onclick="searchPlayer()">Buscar</button>
+            <button onclick="showHomePage()">Volver a Inicio</button>
+        </header>
+        <main id="playersList">
+            <!-- Aquí se mostrarán los jugadores -->
+        </main>
+        <section id="playerDetails" style="display: none;">
+            <div id="playerStats">
+                <h2 id="playerName"></h2>
+                <img id="playerImage" alt="Jugador">
+                <div id="statsBoard">
+                    <!-- Aquí se mostrarán las estadísticas -->
+                </div>
+            </div>
+            <div id="videoClips">
+                <!-- Aquí se mostrarán los clips de video -->
+            </div>
+        </section>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
