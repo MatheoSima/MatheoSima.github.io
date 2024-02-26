@@ -1,56 +1,90 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #f8f8f8;
 }
 
 header {
     background-color: #333;
     color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+#presentation {
     text-align: center;
     padding: 20px;
 }
 
-nav {
-    margin-top: 10px;
+#presentation img {
+    max-width: 100%;
+    height: auto;
 }
 
-nav a {
-    color: white;
-    text-decoration: none;
-    margin: 0 10px;
+#playersList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
 }
 
-section {
-    margin: 20px;
+.player-card {
+    margin: 10px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
 }
 
-#search-section {
+.player-card:hover {
+    transform: scale(1.05);
+}
+
+#playerDetails {
+    margin-top: 20px;
     text-align: center;
 }
 
-#player-search-form {
-    margin-bottom: 20px;
+#playerStats {
+    padding: 20px;
 }
 
-table {
-    width: 80%;
-    border-collapse: collapse;
-    margin: 20px auto;
+#playerStats h2 {
+    color: #333;
 }
 
-th, td {
-    border: 1px solid #dddddd;
-    text-align: left;
-    padding: 8px;
+#playerImage {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-th {
-    background-color: #f2f2f2;
+#statsBoard {
+    margin-top: 20px;
 }
 
-img {
-    max-width: 50px;
-    max-height: 50px;
-    border-radius: 50%;
+video {
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
