@@ -13,15 +13,15 @@ const players = [
 ];
 
 function showPlayers() {
-    document.getElementById("homepage").style.display = "none";
-    document.getElementById("playersPage").style.display = "block";
+    document.getElementById("homepage").style.css = "none";
+    document.getElementById("playersPage").style.css = "block";
     displayPlayers(players);
 }
 
 function showHomePage() {
-    document.getElementById("homepage").style.display = "block";
-    document.getElementById("playersPage").style.display = "none";
-    document.getElementById("playerDetails").style.display = "none";
+    document.getElementById("homepage").style.css = "block";
+    document.getElementById("playersPage").style.css = "none";
+    document.getElementById("playerDetails").style.css = "none";
 }
 
 function searchPlayer() {
@@ -72,5 +72,5 @@ function displayPlayerDetails(player) {
 
     videoClips.innerHTML = `<video controls><source src="${player.videoClip}" type="video/mp4"></video>`;
 
-    document.getElementById("playerDetails").style.display = "block";
+    document.getElementById("playerDetails").style.css = "block";
 }
