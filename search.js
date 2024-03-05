@@ -70,7 +70,7 @@ function displayPlayerDetails(player) {
         <p>APG: ${player.stats.apg}</p>
     `;
 
-    videoClips.innerHTML = `<video controls><source src="${player.videoClip}" type="video/mp4"></video>`;
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/Vvr2EUA_ptY?si=w-6AJ1BTnPQrQNOM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
     document.getElementById("playerDetails").style.display = "block";
 }
