@@ -1,5 +1,5 @@
 const players = [
-    { name: "LeBron James", stats: { ppg: 25.4, rpg: 7.9, apg: 7.9 }, videoClip: "lebron_james_clip.mp4" },
+    { name: "LeBron James", stats: { ppg: 25.4, rpg: 7.9, apg: 7.9 }, videoClip:  <iframe width="560" height="315" src="https://www.youtube.com/embed/Vvr2EUA_ptY?si=w-6AJ1BTnPQrQNOM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     { name: "Stephen Curry", stats: { ppg: 30.2, rpg: 5.5, apg: 6.7 }, videoClip: "stephen_curry_clip.mp4" },
     { name: "Kevin Durant", stats: { ppg: 28.2, rpg: 8.4, apg: 5.2 }, videoClip: "kevin_durant_clip.mp4" },
     { name: "Giannis Antetokounmpo", stats: { ppg: 29.6, rpg: 13.7, apg: 5.8 }, videoClip: "giannis_clip.mp4" },
